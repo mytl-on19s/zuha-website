@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zuhail Daley — Spanish-Language Client &amp; Administrative Support</title>
-  <meta name="description" content="Zuhail Daley is a native Spanish speaker in Florida, a Venezuelan-trained lawyer with 8+ years of customer service experience, available for 100% remote, part-time Spanish-language client, legal intake and administrative support.">
+  <title>Zuhail Daley — Spanish-Language Legal Intake, Client &amp; Administrative Support</title>
+  <meta name="description" content="Zuhail Daley is a native Spanish speaker in Florida, a Venezuelan-trained lawyer with 8+ years of customer service experience, available for 100% remote, part-time Spanish-language legal intake, client and administrative support.">
   <link rel="canonical" href="https://zuhaildaley.com/">
   <link rel="alternate" hreflang="en" href="https://zuhaildaley.com/">
   <link rel="alternate" hreflang="es" href="https://zuhaildaley.com/?lang=es">
-  <meta name="theme-color" content="#1f2a37">
+  <meta name="theme-color" content="#13233A">
   <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Zuhail Daley — Spanish-Language Client & Administrative Support">
+  <meta property="og:title" content="Zuhail Daley — Spanish-Language Legal Intake, Client & Administrative Support">
   <meta property="og:description" content="Native Spanish speaker, Venezuelan-trained lawyer, 8+ years in customer service. Available for 100% remote, part-time work.">
   <meta property="og:url" content="https://zuhaildaley.com/">
   <meta property="og:image" content="https://zuhaildaley.com/assets/zuhail-daley.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -28,7 +31,7 @@
     "name": "Zuhail Daley",
     "url": "https://zuhaildaley.com/",
     "email": "mailto:zuhail@zuhaildaley.com",
-    "jobTitle": "Spanish-Language Client & Administrative Support",
+    "jobTitle": "Spanish-Language Legal Intake, Client & Administrative Support",
     "knowsLanguage": ["es", "en"],
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Falcón" },
     "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" }
@@ -38,97 +41,122 @@
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-  <header class="site-header" id="top">
+  <header class="header" id="top">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="#top" aria-label="Zuhail Daley, home">
         <span class="brand-mark" aria-hidden="true">ZD</span>
         <span class="brand-name">Zuhail Daley</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#services" data-i18n="nav.services">How I help</a></li>
-        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="#resume" data-i18n="nav.resume">Résumé</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-      <div class="lang" role="group" aria-label="Language / Idioma">
-        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">English</button>
-        <span aria-hidden="true">|</span>
-        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">Español</button>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr" data-i18n="nav.menu">Menu</span>
+      </button>
+      <div class="menu" id="menu">
+        <ul class="links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#help" data-i18n="nav.help">How I help</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#resumes" data-i18n="nav.resumes">Résumés</a></li>
+        </ul>
+        <div class="lang" role="group" aria-label="Language / Idioma">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">Español</button>
+        </div>
+        <a class="btn btn-navy nav-cta" href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text reveal">
-        <p class="eyebrow" data-i18n="hero.eyebrow">100% remote · Part-time · Florida, USA</p>
-        <h1>Zuhail Daley</h1>
-        <p class="headline" data-i18n="hero.headline">Spanish-language client, intake &amp; administrative support</p>
-        <p class="lede" data-i18n="hero.lede">Native Spanish speaker and Venezuelan-trained lawyer with 8+ years of customer service experience. I help Spanish-speaking clients feel heard, understood and well cared for.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="mailto:zuhail@zuhaildaley.com" data-i18n="hero.cta1">Email me</a>
-          <a class="btn btn-ghost" href="#resume" data-i18n="hero.cta2">View résumé</a>
+    <section class="hero-wrap" aria-labelledby="name">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="greeting reveal" data-i18n="hero.greeting">Hola — I'm Zuhail.</p>
+          <h1 id="name" class="reveal">Zuhail Daley</h1>
+          <p class="role reveal" data-i18n="hero.role">Spanish-language legal intake, client support &amp; administrative support</p>
+          <p class="lede reveal" data-i18n="hero.lede">Venezuelan-trained lawyer and native Spanish speaker with 8+ years of customer service. I help teams care for their Spanish-speaking clients with patience, accuracy and confidentiality.</p>
+          <div class="cta reveal">
+            <a class="btn btn-gold" href="mailto:zuhail@zuhaildaley.com"><span data-i18n="hero.cta1">Email me</span> <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost-light" href="#resumes" data-i18n="hero.cta2">Download résumé</a>
+          </div>
+          <ul class="chips reveal">
+            <li data-i18n="chip1">Native Spanish</li>
+            <li data-i18n="chip2">Basic conversational English</li>
+            <li data-i18n="chip3">100% remote · Part-time</li>
+            <li data-i18n="chip4">Authorized to work in the U.S.</li>
+          </ul>
         </div>
-        <ul class="facts">
-          <li><strong data-i18n="facts.l1">Spanish</strong> <span data-i18n="facts.v1">Native</span></li>
-          <li><strong data-i18n="facts.l2">English</strong> <span data-i18n="facts.v2">Basic conversational</span></li>
-          <li><strong data-i18n="facts.l3">Work</strong> <span data-i18n="facts.v3">Authorized to work in the U.S.</span></li>
-        </ul>
-      </div>
 
-      <figure class="portrait reveal">
-        <!-- Replace assets/zuhail-daley.jpg with Zuha's real photo (portrait, ~1200×1500). Until then a monogram shows. -->
-        <img src="assets/zuhail-daley.jpg" alt="Portrait of Zuhail Daley" width="1200" height="1500"
-             onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
-        <div class="portrait-fallback" hidden aria-hidden="true"><span>ZD</span></div>
-      </figure>
+        <figure class="portrait reveal">
+          <div class="portrait-frame" aria-hidden="true"></div>
+          <!-- Add Zuha's photo as assets/zuhail-daley.jpg (vertical, ~1200×1500). It replaces the placeholder automatically. -->
+          <img src="assets/zuhail-daley.jpg" alt="Portrait of Zuhail Daley" width="1200" height="1500"
+               onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <div class="portrait-placeholder" hidden>
+            <span class="monogram" aria-hidden="true">ZD</span>
+            <span class="ph-label" data-i18n="hero.photo">Professional photo coming soon</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-wrap" aria-label="Highlights">
+      <ul class="stats reveal">
+        <li>
+          <strong><span class="count" data-to="8">8</span>+</strong>
+          <span data-i18n="st1">years of customer service</span>
+        </li>
+        <li>
+          <strong><span class="count" data-to="90">90</span>+</strong>
+          <span data-i18n="st2">calls handled per day</span>
+        </li>
+        <li>
+          <strong><span class="count" data-to="92">92</span>%</strong>
+          <span data-i18n="st3">customer satisfaction, 12% above the company average</span>
+        </li>
+      </ul>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section about">
-      <div class="section-head reveal">
+      <div class="about-head reveal">
         <p class="kicker" data-i18n="about.kicker">About me</p>
-        <h2 data-i18n="about.title">Careful with details. Warm with people.</h2>
-        <ul class="stats">
-          <li><strong>8+</strong> <span data-i18n="st1">years in customer service</span></li>
-          <li><strong>90+</strong> <span data-i18n="st2">calls handled daily</span></li>
-          <li><strong>92%</strong> <span data-i18n="st3">customer satisfaction, 12% above company average</span></li>
-        </ul>
+        <h2 data-i18n="about.title">Careful with details.<br>Warm with people.</h2>
       </div>
       <div class="about-body reveal">
-        <p data-i18n="about.p1">I earned my law degree at Universidad de Falcón in Venezuela in 2012 and practiced independently in civil and commercial law, drafting contracts and legal documents such as purchase-and-sale agreements, ownership transfers and travel authorizations.</p>
-        <p data-i18n="about.p2">I also bring more than eight years of customer service experience in Costa Rica, at Sealed B J LLC and Claro Telecomunicaciones, handling customer requests, complaints and technical questions. Most recently I worked as a lead toddler teacher at RCMA in Florida.</p>
-        <p data-i18n="about.p3">Today I am looking for 100% remote, part-time work supporting law firms, legal intake teams and Spanish-speaking customers.</p>
+        <p data-i18n="about.p1">I earned my law degree at Universidad de Falcón in Venezuela in 2012 and practiced civil and commercial law independently, drafting contracts and legal documents and working with legal software.</p>
+        <p data-i18n="about.p2">For more than eight years I served customers in Costa Rica, at Sealed B J LLC and Claro Telecomunicaciones, handling requests, complaints and technical questions. Most recently I was a lead toddler teacher at RCMA in Florida.</p>
+        <p data-i18n="about.p3">Now I'm looking for 100% remote, part-time work where I can help law firms, intake teams and service teams look after Spanish-speaking clients.</p>
         <p class="note" data-i18n="about.note">Authorized to practice law in Venezuela. I am not licensed to practice law in the United States and do not offer legal advice.</p>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="section">
+    <!-- HOW I HELP -->
+    <section id="help" class="section help">
       <div class="section-head reveal">
-        <p class="kicker" data-i18n="services.kicker">How I can help</p>
-        <h2 data-i18n="services.title">Where I add value</h2>
+        <p class="kicker" data-i18n="help.kicker">How I can help</p>
+        <h2 data-i18n="help.title">What I bring to your team</h2>
       </div>
       <div class="cards">
         <article class="card reveal">
-          <span class="card-num" aria-hidden="true">01</span>
-          <h3 data-i18n="s1.t">Spanish-speaking customer support</h3>
-          <p data-i18n="s1.d">Handling customer requests, questions and complaints by phone, including high-volume support of 90+ calls a day with a 92% satisfaction rating.</p>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0z"/></svg></span>
+          <h3 data-i18n="s1.t">Legal intake support</h3>
+          <p data-i18n="s1.d">Helping law firms and intake teams communicate with Spanish-speaking clients, record their information accurately and apply Spanish legal terminology from my civil and commercial law training.</p>
         </article>
         <article class="card reveal">
-          <span class="card-num" aria-hidden="true">02</span>
-          <h3 data-i18n="s2.t">Legal intake support</h3>
-          <p data-i18n="s2.d">Helping law firms and intake teams communicate with Spanish-speaking clients, record their information accurately and apply Spanish legal terminology from my civil and commercial law training.</p>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <h3 data-i18n="s2.t">Spanish-speaking customer support</h3>
+          <p data-i18n="s2.d">Handling customer requests, questions and complaints by phone, including high-volume support of 90+ calls a day with a 92% satisfaction rating.</p>
         </article>
         <article class="card reveal">
-          <span class="card-num" aria-hidden="true">03</span>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span>
           <h3 data-i18n="s3.t">Contract &amp; document preparation</h3>
           <p data-i18n="s3.d">Detail-oriented preparation of contracts and legal documents in Spanish, based on my experience drafting purchase-and-sale agreements, ownership transfers and travel authorizations.</p>
         </article>
         <article class="card reveal">
-          <span class="card-num" aria-hidden="true">04</span>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h6"/></svg></span>
           <h3 data-i18n="s4.t">Data entry &amp; administrative support</h3>
           <p data-i18n="s4.d">Registering new customers, entering and retrieving customer data, and working with Microsoft Office, Google Workspace and CRM software.</p>
         </article>
@@ -136,93 +164,141 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section id="experience" class="section experience">
       <div class="section-head reveal">
         <p class="kicker" data-i18n="exp.kicker">Experience &amp; education</p>
-        <h2 data-i18n="exp.title">Background</h2>
+        <h2 data-i18n="exp.title">Law, service and care</h2>
       </div>
-      <ol class="timeline">
-        <li class="reveal">
-          <p class="when" data-i18n="e1.w">Apr 2023 – May 2025</p>
-          <h3 data-i18n="e1.t">Teacher 1 (seasonal)</h3>
-          <p class="where">RCMA · Florida</p>
-          <p data-i18n="e1.d">Lead teacher in a toddler daycare classroom of up to 15 children ages 1 to 4. Planned learning and development activities and communicated consistently with parents and administration.</p>
-        </li>
-        <li class="reveal">
-          <p class="when">2019 – 2023</p>
-          <h3 data-i18n="e2.t">Mobile Phone Sales and Child Care</h3>
-          <p data-i18n="e2.d">Two consecutive positions: sold mobile phones and telephone service lines, then worked in a daycare.</p>
-        </li>
-        <li class="reveal">
-          <p class="when">2016 – 2019</p>
-          <h3 data-i18n="e3.t">Customer Service</h3>
-          <p class="where">Claro Telecomunicaciones · Costa Rica</p>
-          <p data-i18n="e3.d">Handled customer requests, questions, complaints and suggestions; explained telecommunications products and services; and provided technical assistance to resolve issues.</p>
-        </li>
-        <li class="reveal">
-          <p class="when">2011 – 2016</p>
-          <h3 data-i18n="e4.t">Customer Service</h3>
-          <p class="where">Sealed B J LLC · Costa Rica</p>
-          <p data-i18n="e4.d">Handled 90+ calls a day: registering new customers, retrieving customer data, presenting product information and processing cancellations. Earned a 92% average satisfaction rating, 12% above the company average, and proposed retention tactics that reduced cancellations by 5%.</p>
-        </li>
-        <li class="reveal">
-          <p class="when">2012 – 2014</p>
-          <h3 data-i18n="e5.t">Lawyer (Abogada) — Independent Practice</h3>
-          <p class="where">Venezuela</p>
-          <p data-i18n="e5.d">Practiced civil and commercial law independently, drafting contracts and legal documents including purchase-and-sale agreements, ownership transfers and travel authorizations, and used legal software in my legal work in Venezuela.</p>
-        </li>
-        <li class="reveal edu">
-          <p class="when">2012</p>
-          <h3 data-i18n="e6.t">Law Degree (Título de Abogada)</h3>
-          <p class="where">Universidad de Falcón · Venezuela</p>
-          <p data-i18n="e6.d">Authorized to practice law in Venezuela. Not licensed to practice law in the United States.</p>
-        </li>
-        <li class="reveal edu">
-          <p class="when" data-i18n="e7.w">Training</p>
-          <h3 data-i18n="e7.t">DCF Child Care Training</h3>
-          <p class="where" data-i18n="e7.d">Florida · 45 hours</p>
-        </li>
-      </ol>
+
+      <div class="exp-grid">
+        <!-- Legal background -->
+        <aside class="legal reveal" aria-labelledby="legal-h">
+          <p class="legal-tag" data-i18n="legal.tag">Legal background · Venezuela</p>
+          <h3 id="legal-h" data-i18n="legal.h">Trained and practiced as a lawyer</h3>
+          <div class="legal-item">
+            <p class="when">2012</p>
+            <h4 data-i18n="e6.t">Law Degree (Título de Abogada)</h4>
+            <p class="where">Universidad de Falcón · Venezuela</p>
+          </div>
+          <div class="legal-item">
+            <p class="when">2012 – 2014</p>
+            <h4 data-i18n="e5.t">Lawyer (Abogada) — Independent Practice</h4>
+            <ul>
+              <li data-i18n="e5.b1">Civil and commercial law</li>
+              <li data-i18n="e5.b2">Drafted contracts and legal documents: purchase-and-sale agreements, ownership transfers and travel authorizations</li>
+              <li data-i18n="e5.b3">Used legal software in my legal work in Venezuela</li>
+            </ul>
+          </div>
+          <p class="legal-note" data-i18n="e6.d">Authorized to practice law in Venezuela. Not licensed to practice law in the United States.</p>
+        </aside>
+
+        <!-- Service & admin timeline -->
+        <ol class="timeline" aria-label="Work history">
+          <li class="reveal">
+            <p class="when" data-i18n="e1.w">Apr 2023 – May 2025</p>
+            <div>
+              <h3 data-i18n="e1.t">Teacher 1 (seasonal)</h3>
+              <p class="where">RCMA · Florida</p>
+              <p data-i18n="e1.d">Lead teacher in a toddler daycare classroom of up to 15 children ages 1 to 4. Planned learning and development activities and communicated consistently with parents and administration.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2019 – 2023</p>
+            <div>
+              <h3 data-i18n="e2.t">Mobile Phone Sales and Child Care</h3>
+              <p class="where" data-i18n="e2.w">Two consecutive positions</p>
+              <p data-i18n="e2.d">Sold mobile phones and telephone service lines, then worked in a daycare.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2016 – 2019</p>
+            <div>
+              <h3 data-i18n="e3.t">Customer Service</h3>
+              <p class="where">Claro Telecomunicaciones · Costa Rica</p>
+              <p data-i18n="e3.d">Handled customer requests, questions, complaints and suggestions; explained telecommunications products and services; and provided technical assistance to resolve issues.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">2011 – 2016</p>
+            <div>
+              <h3 data-i18n="e4.t">Customer Service</h3>
+              <p class="where">Sealed B J LLC · Costa Rica</p>
+              <p data-i18n="e4.d">Handled 90+ calls a day: registering new customers, retrieving customer data, presenting product information and processing cancellations. Earned a 92% average satisfaction rating, 12% above the company average, and proposed retention tactics that reduced cancellations by 5%.</p>
+            </div>
+          </li>
+          <li class="reveal training">
+            <p class="when" data-i18n="e7.w">Training</p>
+            <div>
+              <h3 data-i18n="e7.t">DCF Child Care Training</h3>
+              <p class="where" data-i18n="e7.d">Florida · 45 hours</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- RESUME -->
-    <section id="resume" class="section">
+    <!-- RESUMES -->
+    <section id="resumes" class="section resumes">
       <div class="section-head reveal">
-        <p class="kicker" data-i18n="res.kicker">Résumé</p>
-        <h2 data-i18n="res.title">Download my résumé</h2>
-        <p class="sub" data-i18n="res.sub">Available in English and Spanish, as text-based PDFs.</p>
+        <p class="kicker" data-i18n="res.kicker">Résumés</p>
+        <h2 data-i18n="res.title">Choose the version that fits your role</h2>
+        <p class="sub" data-i18n="res.sub">Each résumé is available in English and Spanish as a text-based PDF.</p>
       </div>
-      <div class="resumes">
+      <div class="resume-grid">
         <article class="resume-card reveal">
+          <p class="resume-kicker" data-i18n="r1.k">For law firms</p>
           <h3 data-i18n="r1.t">Legal Support &amp; Client Intake</h3>
-          <p data-i18n="r1.d">For law offices, including immigration firms, that serve Spanish-speaking clients.</p>
-          <div class="dl">
-            <a class="btn btn-small" data-resume href="resumes/Zuhail-Daley-Resume-Legal-Support-EN.pdf" download>PDF · English</a>
-            <a class="btn btn-small" data-resume href="resumes/Zuhail-Daley-Resume-Legal-Support-ES.pdf" download>PDF · Español</a>
+          <p data-i18n="r1.d">For law firms, including immigration firms, that serve Spanish-speaking clients.</p>
+          <div class="files">
+            <a class="file" data-resume data-label="English" href="resumes/Zuhail-Daley-Resume-Legal-Support-EN.pdf" download>
+              <span class="file-icon" aria-hidden="true">PDF</span>
+              <span class="file-text"><strong>English</strong><small data-i18n="pdf.en">Download · 2 pages</small></span>
+              <span class="file-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="file" data-resume data-label="Español" href="resumes/Zuhail-Daley-Resume-Legal-Support-ES.pdf" download>
+              <span class="file-icon" aria-hidden="true">PDF</span>
+              <span class="file-text"><strong>Español</strong><small data-i18n="pdf.es">Download · 2 pages</small></span>
+              <span class="file-arrow" aria-hidden="true">↓</span>
+            </a>
           </div>
         </article>
         <article class="resume-card reveal">
+          <p class="resume-kicker" data-i18n="r2.k">For service &amp; admin teams</p>
           <h3 data-i18n="r2.t">Customer Service &amp; Administrative Support</h3>
           <p data-i18n="r2.d">For Spanish-language customer service, data entry and administrative support roles.</p>
-          <div class="dl">
-            <a class="btn btn-small" data-resume href="resumes/Zuhail-Daley-Resume-Client-Support-EN.pdf" download>PDF · English</a>
-            <a class="btn btn-small" data-resume href="resumes/Zuhail-Daley-Resume-Client-Support-ES.pdf" download>PDF · Español</a>
+          <div class="files">
+            <a class="file" data-resume data-label="English" href="resumes/Zuhail-Daley-Resume-Client-Support-EN.pdf" download>
+              <span class="file-icon" aria-hidden="true">PDF</span>
+              <span class="file-text"><strong>English</strong><small data-i18n="pdf.en2">Download · 2 pages</small></span>
+              <span class="file-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="file" data-resume data-label="Español" href="resumes/Zuhail-Daley-Resume-Client-Support-ES.pdf" download>
+              <span class="file-icon" aria-hidden="true">PDF</span>
+              <span class="file-text"><strong>Español</strong><small data-i18n="pdf.es2">Download · 2 pages</small></span>
+              <span class="file-arrow" aria-hidden="true">↓</span>
+            </a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact reveal">
-      <p class="kicker" data-i18n="c.kicker">Contact</p>
-      <h2 data-i18n="c.title">Let's talk</h2>
-      <p data-i18n="c.d">I am available for 100% remote, part-time positions. I reply fastest by email, and I am happy to communicate in Spanish.</p>
-      <a class="btn btn-primary btn-large" href="mailto:zuhail@zuhaildaley.com">zuhail@zuhaildaley.com</a>
+    <section id="contact" class="section contact-wrap">
+      <div class="contact reveal">
+        <p class="kicker light" data-i18n="c.kicker">Contact</p>
+        <h2 data-i18n="c.title">¿Hablamos? Let's talk.</h2>
+        <p class="contact-text" data-i18n="c.d">I'm available for 100% remote, part-time positions. I reply fastest by email and am always happy to communicate in Spanish.</p>
+        <div class="contact-actions">
+          <a class="btn btn-gold btn-large" href="mailto:zuhail@zuhaildaley.com"><span>zuhail@zuhaildaley.com</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <button type="button" class="btn btn-ghost-light copy" data-email="zuhail@zuhaildaley.com" data-i18n="c.copy">Copy email</button>
+        </div>
+        <p class="contact-meta" data-i18n="c.meta">Native Spanish · Basic conversational English · Florida, USA</p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year">2026</span> Zuhail Daley · <span data-i18n="f.loc">Florida, USA</span></p>
+    <p>© <span id="year">2026</span> Zuhail Daley</p>
     <a href="#top" data-i18n="f.top">Back to top ↑</a>
   </footer>
 
