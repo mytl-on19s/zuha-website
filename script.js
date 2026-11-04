@@ -114,6 +114,10 @@
       if (dict[k] != null) n.innerHTML = dict[k];
     });
     document.querySelectorAll(".file.request small").forEach(function (s) { s.textContent = t("req"); });
+    document.querySelectorAll("img[data-alt-es]").forEach(function (im) {
+      if (!im.hasAttribute("data-alt-en")) im.setAttribute("data-alt-en", im.alt);
+      im.alt = current === "es" ? im.getAttribute("data-alt-es") : im.getAttribute("data-alt-en");
+    });
     root.lang = current;
     document.title = META[current].title;
     document.querySelector('meta[name="description"]').content = META[current].desc;

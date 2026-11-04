@@ -90,9 +90,13 @@
 
         <figure class="portrait reveal">
           <div class="portrait-frame" aria-hidden="true"></div>
-          <!-- Add Zuha's photo as assets/zuhail-daley.jpg (vertical, ~1200×1500). It replaces the placeholder automatically. -->
-          <img src="assets/zuhail-daley.jpg" alt="Portrait of Zuhail Daley" width="1200" height="1500"
-               onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <picture>
+            <source srcset="assets/zuhail-daley-640.webp 640w, assets/zuhail-daley-960.webp 960w" sizes="(max-width: 920px) 80vw, 420px" type="image/webp">
+            <img src="assets/zuhail-daley.jpg" srcset="assets/zuhail-daley-640.jpg 640w, assets/zuhail-daley.jpg 960w" sizes="(max-width: 920px) 80vw, 420px"
+                 alt="Professional portrait of Zuhail Daley" data-alt-es="Retrato profesional de Zuhail Daley"
+                 width="960" height="1200" fetchpriority="high" decoding="async"
+                 onerror="this.closest('picture').hidden=true; this.closest('figure').querySelector('.portrait-placeholder').hidden=false;">
+          </picture>
           <div class="portrait-placeholder" hidden>
             <span class="monogram" aria-hidden="true">ZD</span>
             <span class="ph-label" data-i18n="hero.photo">Professional photo coming soon</span>
